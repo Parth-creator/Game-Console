@@ -619,7 +619,6 @@ void loop(){
     }
     for(int index = 0; index < (sizeof(enemyRow)/sizeof(int));index++){
         lc.setLed(0, enemyRow[index], enemyColumn[index], LOW);
-        enemyColumn[index] += enemyVelocity;
         lc.setLed(0, enemyRow[index], enemyColumn[index], HIGH);
     }
 
